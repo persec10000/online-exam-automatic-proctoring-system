@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Online Exam Automatic Proctoring System</title>
+  </head>
+  <body>
+   
+    <h1>Online Exam Automatic Proctoring System</h1>
+	
+    <img src="{{ url_for('video_feed') }}">
+	<form method="POST" action="/">
+	<p>
+	<input type = "submit" name = "submit_button" value = "Take Student Photo" />
+	<input type = "submit" name = "submit_button" value = "Take ID Photo" />
+  <input type = "submit" name = "submit_button" value = "Take Environment Video" />
+	<input type = "submit" name = "submit_button" value = "Start Exam" />
+	<input type = "submit" name = "submit_button" value = "End Exam & Send email" />
+	<label id=""> {{ suggestion }} </label>
+	</p>
+   </form>
+  </body>
+  <footer>
+  <p>Created By: Mohammad Almehairbi</p>
+  <p><a href="mailto:MohammadAlmehairbi@gmail.com">MohammadAlmehairbi@gmail.com</a></p>
+  </footer>
+</html>
